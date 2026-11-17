@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Isha - AI / ML Developer Portfolio. Specializing in intelligent, multimodal deep learning systems, computer vision, and digital media integrity.">
+  <title>Isha | AI & ML Developer Portfolio</title>
+
+  <!-- Font Awesome CDN for Glowing Brand Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Interactive Zero-Gravity Canvas Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Floating Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#about" class="navbar-brand">Isha</a>
+      <div class="navbar-links">
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#tech-stack" class="nav-link">Tech Stack</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Viewport Container -->
+  <div class="app-container">
+
+    <!-- 1. HERO & ABOUT ME SECTION -->
+    <section id="about" class="hero section-entrance">
+      <div class="hero-avatar-wrapper">
+        <div class="hero-avatar-ring"></div>
+        <div class="hero-avatar-glow"></div>
+        <!-- In case the image doesn't load or copy failed, we provide a backup fallback -->
+        <img src="profile.png" alt="Isha Profile Avatar" class="hero-avatar"
+          onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
+        <div id="avatar-fallback" class="hero-avatar-placeholder" style="display: none;">I</div>
+      </div>
+
+      <h1 id="hero-title" class="hero-name">Isha</h1>
+      <div class="hero-subtitle">AI / ML Developer</div>
+      <p id="hero-objective" class="hero-objective">
+        Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning, with experience in developing technology solutions, evaluating emerging tools, and translating ideas into practical applications. Strong understanding of AI/ML, software development, and product functionality, with an interest in product planning, requirement analysis, problem-solving, and cross-functional collaboration.
+      </p>
+      <div class="hero-cta-group">
+        <a href="resume_new.pdf" target="_blank" rel="noopener noreferrer" class="cta-btn hero-cta-btn resume-view-btn">
+          <i class="fa-solid fa-file-pdf"></i> View Resume
+        </a>
+        <a href="resume_new.pdf" download="resume_new.pdf" class="cta-btn hero-cta-btn resume-download-btn">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+      </div>
+    </section>
+
+    <!-- 2. EDUCATION SECTION -->
+    <section id="education" class="section-entrance">
+      <h2 class="section-title">Academic Pathway</h2>
+
+      <div id="education-timeline" class="timeline-container">
+        <!-- Node 1: 10th Standard (ICSE) -->
+        <div class="timeline-node">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-tag"><i class="fa-solid fa-school"></i> 10th Standard</span>
+            <h3 class="timeline-degree">Secondary Education (10th)</h3>
+            <p class="timeline-institution">St. Mary's School <span class="timeline-badge-board">ICSE</span></p>
+            <p class="timeline-score"><i class="fa-solid fa-award"></i> Percentage: 94.6%</p>
+            <p class="timeline-duration"><i class="fa-regular fa-calendar"></i> 2018 – 2019</p>
+          </div>
+        </div>
+
+        <!-- Node 2: 12th Standard (CBSE) -->
+        <div class="timeline-node">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-tag"><i class="fa-solid fa-school"></i> 12th Standard</span>
+            <h3 class="timeline-degree">Senior Secondary Education (12th)</h3>
+            <p class="timeline-institution">RAN Public School <span class="timeline-badge-board">CBSE</span></p>
+            <p class="timeline-score"><i class="fa-solid fa-award"></i> Percentage: 90%</p>
+            <p class="timeline-duration"><i class="fa-regular fa-calendar"></i> 2020 – 2021</p>
+          </div>
+        </div>
+
+        <!-- Node 3: B.Tech (Undergrad) -->
+        <div class="timeline-node">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-tag"><i class="fa-solid fa-graduation-cap"></i> Undergraduate</span>
+            <h3 class="timeline-degree">B.Tech in Computer Science (Artificial Intelligence & Machine Learning)</h3>
+            <p class="timeline-institution" style="color: var(--cyan);">
+              <i class="fa-solid fa-location-dot"></i> UPES, Dehradun
+            </p>
+            <p class="timeline-score"><i class="fa-solid fa-award"></i> CGPA: 8.7/10</p>
+            <p class="timeline-duration"><i class="fa-regular fa-calendar"></i> August 2023 – Present</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.5 EXPERIENCE & INTERNSHIPS SECTION -->
+    <section id="experience" class="section-entrance">
+      <h2 class="section-title">Experience & Internships</h2>
+
+      <div id="experience-grid" class="experience-grid">
+        <!-- Card 1: Xebia IT Architects -->
+        <div class="experience-card glass-card">
+          <div class="card-header-wrapper">
+            <span class="experience-tag"><i class="fa-solid fa-briefcase"></i> Internship</span>
+            <h3 class="experience-card-title">AI & Technology Intern</h3>
+            <h4 class="experience-card-subtitle">Xebia IT Architects</h4>
+            <p class="experience-duration"><i class="fa-regular fa-calendar"></i> June 2026 – July 2026</p>
+          </div>
+          <ul class="experience-bullets">
+            <li>Designed and prototyped web interfaces, translating UI concepts into responsive layouts using AI-assisted tools like Antigravity and Stitch.</li>
+            <li>Evaluated emerging technology tools through weekly assessments, analyzing their functionality, usability, and potential applications in workflows.</li>
+          </ul>
+          <a href="Xebia_Certificate.pdf" target="_blank" rel="noopener noreferrer" class="outline-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <!-- Card 2: Arsalley -->
+        <div class="experience-card glass-card">
+          <div class="card-header-wrapper">
+            <span class="experience-tag"><i class="fa-solid fa-briefcase"></i> Internship</span>
+            <h3 class="experience-card-title">Web Development Intern</h3>
+            <h4 class="experience-card-subtitle">Arsalley</h4>
+            <p class="experience-duration"><i class="fa-regular fa-calendar"></i> June 2025 – July 2025</p>
+          </div>
+          <ul class="experience-bullets">
+            <li>Developed and tested 3+ web application modules using frontend and backend technologies.</li>
+            <li>Identified and resolved 10+ software bugs, improving application performance and system reliability.</li>
+          </ul>
+          <a href="Copy of completion letter Arsalley.pdf" target="_blank" rel="noopener noreferrer" class="outline-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TECH STACK SECTION -->
+    <section id="tech-stack" class="section-entrance">
+      <h2 class="section-title">Technical Matrix</h2>
+
+      <div id="tech-grid" class="tech-grid">
+        <!-- Card 1: Product & Analytical Skills -->
+        <div class="tech-card glass-card">
+          <div class="tech-card-header">
+            <i class="fa-solid fa-chart-line tech-icon"></i>
+            <h3 class="tech-card-title">Product & Analytical Skills</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill">Problem-Solving</span>
+            <span class="tech-pill">Requirement Analysis</span>
+            <span class="tech-pill">Product Evaluation</span>
+            <span class="tech-pill">Technical Documentation</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Programming -->
+        <div class="tech-card glass-card">
+          <div class="tech-card-header">
+            <i class="fa-solid fa-code tech-icon"></i>
+            <h3 class="tech-card-title">Programming</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">C++</span>
+          </div>
+        </div>
+
+        <!-- Card 3: AI/ML & Emerging Technologies -->
+        <div class="tech-card glass-card">
+          <div class="tech-card-header">
+            <i class="fa-solid fa-brain tech-icon"></i>
+            <h3 class="tech-card-title">AI/ML & Emerging Technologies</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill">Machine Learning</span>
+            <span class="tech-pill">Deep Learning</span>
+            <span class="tech-pill">NLP</span>
+            <span class="tech-pill">RAG</span>
+            <span class="tech-pill">LLMs</span>
+            <span class="tech-pill">Computer Vision</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Frameworks & Tools -->
+        <div class="tech-card glass-card">
+          <div class="tech-card-header">
+            <i class="fa-solid fa-screwdriver-wrench tech-icon"></i>
+            <h3 class="tech-card-title">Frameworks & Tools</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill">FastAPI</span>
+            <span class="tech-pill">Django</span>
+            <span class="tech-pill">LangChain</span>
+            <span class="tech-pill">LangGraph</span>
+            <span class="tech-pill">PyTorch</span>
+            <span class="tech-pill">TensorFlow</span>
+            <span class="tech-pill">Git</span>
+            <span class="tech-pill">GitHub</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Databases -->
+        <div class="tech-card glass-card">
+          <div class="tech-card-header">
+            <i class="fa-solid fa-database tech-icon"></i>
+            <h3 class="tech-card-title">Databases</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill">SQL</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">ChromaDB</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Core Concepts -->
+        <div class="tech-card glass-card">
+          <div class="tech-card-header">
+            <i class="fa-solid fa-microchip tech-icon"></i>
+            <h3 class="tech-card-title">Core Concepts</h3>
+          </div>
+          <div class="tech-pills">
+            <span class="tech-pill">Software Development Lifecycle</span>
+            <span class="tech-pill">Database Management Systems</span>
+            <span class="tech-pill">Object-Oriented Programming</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECT SECTION -->
+    <section id="projects" class="section-entrance">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div id="project-container" class="project-container">
+        <!-- Project 1: Deepfake Detection System -->
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-title-wrapper">
+              <h3 class="project-title">Deepfake Detection System</h3>
+              <span class="badge-copyright">
+                <i class="fa-solid fa-shield-halved"></i> Multimodal AI
+              </span>
+            </div>
+          </div>
+
+          <div class="project-tech-tags">
+            <span class="tag-project">Python</span>
+            <span class="tag-project">PyTorch</span>
+            <span class="tag-project">OpenCV</span>
+            <span class="tag-project">Librosa</span>
+          </div>
+
+          <ul class="project-bullets">
+            <li>Developed a multimodal deep-learning system to detect deepfake content using facial images and voice signals.</li>
+            <li>Implemented CNN-based analysis of manipulated facial frames and extracted 40+ audio features using Librosa.</li>
+            <li>Combined predictions from audio and visual models for final classification.</li>
+          </ul>
+        </div>
+
+        <!-- Project 2: Dynamic Context Compression Engine -->
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-title-wrapper">
+              <h3 class="project-title">Dynamic Context Compression Engine</h3>
+              <span class="badge-copyright">
+                <i class="fa-solid fa-layer-group"></i> LLM & RAG
+              </span>
+            </div>
+          </div>
+
+          <div class="project-tech-tags">
+            <span class="tag-project">Python</span>
+            <span class="tag-project">LangChain</span>
+            <span class="tag-project">LangGraph</span>
+            <span class="tag-project">Embeddings</span>
+            <span class="tag-project">Vector Retrieval</span>
+            <span class="tag-project">LLMs</span>
+            <span class="tag-project">RAG</span>
+          </div>
+
+          <ul class="project-bullets">
+            <li>Identified the challenge of managing long conversational contexts and developed an LLM-based solution using RAG, embeddings, and vector retrieval.</li>
+            <li>Designed an adaptive compression pipeline using importance scoring, semantic similarity, and deduplication to reduce redundancy while preserving relevant information.</li>
+            <li>Developed an end-to-end workflow covering retrieval, compression, context reconstruction, and memory updates to improve contextual information management.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CONTACT SECTION -->
+    <section id="contact" class="section-entrance contact-section">
+      <div class="contact-card glass-card">
+        <h2 class="contact-headline">Let's Connect</h2>
+        <p class="contact-text">
+          Currently open to AI/ML developer roles and collaborative projects. Let's build something amazing together.
+        </p>
+
+        <div class="contact-actions">
+          <!-- Email Button -->
+          <a href="mailto:ishavishwas2002@gmail.com" class="email-btn cta-btn">
+            <i class="fa-solid fa-envelope"></i> ishavishwas2002@gmail.com
+          </a>
+
+          <!-- Social Icons Row -->
+          <div class="contact-socials">
+            <a href="https://linkedin.com/in/isha8a556b23a" target="_blank" rel="noopener noreferrer"
+              class="social-link linkedin" data-tooltip="LinkedIn Connect">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/IshaVishwas" target="_blank" rel="noopener noreferrer"
+              class="social-link github" data-tooltip="GitHub Directory">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+
+          <!-- Resume Action Buttons -->
+          <div class="contact-cta-group">
+            <a href="resume_new.pdf" target="_blank" rel="noopener noreferrer" class="cta-btn hero-cta-btn resume-view-btn">
+              <i class="fa-solid fa-file-pdf"></i> View Resume
+            </a>
+            <a href="resume_new.pdf" download="resume_new.pdf" class="cta-btn hero-cta-btn resume-download-btn">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Centralized Portfolio Data Source -->
+  <script src="portfolio-data.js"></script>
+  <!-- Interactive JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
